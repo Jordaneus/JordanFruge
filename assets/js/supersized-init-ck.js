@@ -1,0 +1,1 @@
+jQuery(function(e){e.supersized({slide_interval:4e3,transition:1,transition_speed:1e3,performance:1,min_width:0,min_height:0,vertical_center:1,horizontal_center:1,fit_always:0,fit_portrait:1,fit_landscape:0,slide_links:"blank",slides:[{image:"assets/img/backgrounds/jordan-1.png"},{image:"assets/img/backgrounds/jordan-2.png"}]})});
