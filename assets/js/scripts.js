@@ -1,9 +1,21 @@
 /*
     Countdown initializer
 */
+var bar_percentage;
 $(function() {
     var now = new Date();
-    var countTo = 15 * 24 * 60 * 60 * 1000 + now.valueOf();
+    var end = new Date("November 1, 2013");
+    var start = new Date("August 25, 2013");
+    var total = end.valueOf() - start.valueOf();
+    var current = end.valueOf() - now.valueOf();
+    bar_percentage = Math.round((current/total)*100);
+    console.log(end.valueOf());
+    console.log(start.valueOf());
+    console.log(total);
+    console.log(bar_percentage);
+
+    //var countTo = 15 * 24 * 60 * 60 * 1000 + now.valueOf();
+    var countTo = end.valueOf();// + now.valueOf();
     $('.timer').countdown(countTo, function(event) {
         var $this = $(this);
         switch(event.type) {
@@ -26,6 +38,8 @@ $(function() {
 /*
     Show latest tweets
 */
+/*
+-- Deprecated --
 jQuery(function($) {
     $(".show-tweets").tweet({
         username: "anli_zaimi",
@@ -45,19 +59,20 @@ jQuery(function($) {
         ticker();
     });
 });
-
-
-/*
-    Progress bar
 */
-var percentage = $('.progress .bar').attr("data-percentage");
-$('.progress .bar').animate({width: (percentage)+'%'}, 1000);
-
 
 /*
     Subscription form
 */
 jQuery(document).ready(function() {
+
+    /*
+        Progress bar
+    */
+    $('.progress .bar').attr("data-percentage", bar_percentage);
+    $('.progress .bar .percent-value').html(bar_percentage+"%");
+    var percentage = $('.progress .bar').attr("data-percentage");
+    $('.progress .bar').animate({width: (percentage)+'%'}, 1000);
 
     $('.success-message').hide();
     $('.error-message').hide();
