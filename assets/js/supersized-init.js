@@ -20,8 +20,8 @@ jQuery(function($){
         // Components
         slide_links        : 'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
         slides             : [    // Slideshow Images
-                                 {image : 'assets/img/backgrounds/jordan-1.jpg'},
-                                 {image : 'assets/img/backgrounds/jordan-2.jpg'},
+                                 {image : 'assets/img/backgrounds/jordan-1.png'},
+                                 {image : 'assets/img/backgrounds/jordan-2.png'},
                                  //{image : 'assets/img/backgrounds/3.jpg'},
                                  //{image : 'assets/img/backgrounds/4.jpg'}
                              ]
