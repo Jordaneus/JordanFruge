@@ -7,6 +7,18 @@
   "ascent": 850,
   "glyphs": [
     {
+      "uid": "9ea0a737ccc45d6c510dcbae56058849",
+      "css": "music",
+      "code": 59496,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f27bba41a700af51a4dd23cf4edea61d",
+      "css": "headphones",
+      "code": 59495,
+      "src": "fontawesome"
+    },
+    {
       "uid": "446acc3b40ca5654627ffb8bc6b906e7",
       "css": "duckduckgo",
       "code": 59392,

@@ -35,7 +35,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="components/fontello/css/fontello.css">
 
   <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -48,7 +48,6 @@
       <![endif]-->
 
     </head>
-    <!-- NAVBAR  ================================================== -->
     <body>
       <div class="navbar-wrapper">
         <div class="container">
@@ -85,19 +84,20 @@
       <div id="top" class="banner">
         <div class="container">
           <div class="row">
-            <div class="group-left col-md-6">
+            <div class="group-left equal-height col-md-7">
               <div class="group-inner">
-                <h3>New Album</h3>
-                <h2>Ice Cold Fever</h2>
-                <h3>Available Now</h3>
+                <span class="top-line">Ice Cold Fever</span>
+                <span class="bottom-line">New Album Available Now</span>
               </div>
             </div>
-            <div class="group-right col-md-6">
+            <div class="group-right equal-height col-md-5">
               <div class="group-inner">
                 <a href="https://itunes.apple.com/us/album/ice-cold-fever/id735309567?uo=4&at=10lomA" target="itunes_store"><img src="img/ICF_small.png" alt="Ice Cold Fever Album" title="Ice Cold Fever by Jordan Fruge" class="thumbnail"></a>
-                <a href="https://itunes.apple.com/us/album/ice-cold-fever/id735309567?uo=4&at=10lomA" target="itunes_store" class="btn btn-primary btn-lg"><i class="social-itunes"></i>Buy on iTunes</a>
-                <a href="#shop" class="btn btn-success btn-lg">Buy CD</a>
-                <a href="#streaming" class="btn btn-info btn-lg btn-block"> Everywhere Else</a>
+                <div class="buttons">
+                  <a href="https://itunes.apple.com/us/album/ice-cold-fever/id735309567?uo=4&at=10lomA" target="itunes_store" class="btn btn-default btn-lg btn-itunes btn-block"><i class="social-itunes"></i> Buy on iTunes</a>
+                  <a href="#shop" class="btn btn-default btn-cd btn-lg btn-block"><i class="social-paypal"></i> Buy on CD</a>
+                  <a href="#streaming" class="btn btn-default btn-lg btn-block btn-everything"><i class="social-headphones"></i> Everywhere Else</a>
+                </div>
               </div>
             </div>
           </div>
@@ -113,12 +113,31 @@
 
       <!-- START THE FEATURETTES -->
       <div class="row featurette">
-        <div class="col-md-6">
-          <a href=""></a>
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
           <h2 id="streaming" class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-12 row">
+          <div class=" col-md-3">
+            <a class="btn btn-default btn-lg btn-block" href="https://itunes.apple.com/us/album/ice-cold-fever/id735309567?uo=4&at=10lomA" target="itunes_store" title="Buy on iTunes">
+              <i class="social-itunes"></i> Buy on iTunes
+            </a>
+          </div>
+          <div class=" col-md-3">
+            <a class="btn btn-default btn-lg btn-block" href="https://play.google.com/store/music/album/Jordan_Frug%C3%A9_Ice_Cold_Fever?id=Bhngim3ywoghnmtskrz6bpsvsr4" title="Buy on Google Play">
+              <i class="social-googleplay"></i> Buy on Google Play
+            </a>
+          </div>
+          <div class=" col-md-3">
+            <a class="btn btn-default btn-lg btn-block" href="http://www.amazon.com/Cold-Fever-Explicit-Jordan-Frug%C3%A9/dp/B00GBG5700" title="Buy on Amazon MP3">
+              <i class="social-amazon"></i> Buy on Amazon MP3
+            </a>
+          </div>
+          <div class=" col-md-3">
+            <a class="btn btn-default btn-lg btn-block" href="http://open.spotify.com/album/0HjqnjHycmv1Q9TSQwg1CP" title="Listen on Spotify">
+              <i class="social-spotify"></i> Listen on Spotify
+            </a>
+          </div>
         </div>
       </div>
 
@@ -165,6 +184,14 @@
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive img-thumbnail" src="img/jordan_profile.png" alt="About Jordan Fruge">
+          <div class="social-media">
+            <a class="facebook" href="https://www.facebook.com/jordanfrugemusic" title="Facebook"><i class="social-facebook"></i></a>
+            <a class="twitter" href="https://twitter.com/jordaneus" title="Twitter"><i class="social-twitter"></i></a>
+            <a class="soundcloud" href="https://soundcloud.com/jordanfruge" title="Soundcloud"><i class="social-soundcloud"></i></a>
+            <a class="instagram" href="http://instagram.com/jordaneus" title="Instagram"><i class="social-instagram"></i></a>
+            <a class="youtube" href="www.youtube.com/channel/UCC_Zj2xXQJbGP919Bmnso_A/feed" title="Youtube"><i class="social-youtube"></i></a>
+            <a class="email" href="mailto:jordaneus@gmail.com" title="Email"><i class="social-email"></i></a>
+          </div>
         </div>
       </div>
 
@@ -204,6 +231,11 @@
       });
     });
     </script>
-    <script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 698185,widget_type: "store_item_buy_now",anchor_id: "wepay_widget_anchor_527c63620b16c",widget_options: {store_id: 349981,show_item_price: false,show_item_images: false,button_text_sold_out: "Sold Out",show_item_custom_options: true,reference_id: ""}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
+    <script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 698185,widget_type: "store_item_buy_now",anchor_id: "wepay_widget_anchor_527c63620b16c",widget_options: {store_id: 349981,show_item_price: false,show_item_images: false,button_text_sold_out: "Sold Out",show_item_custom_options: true,reference_id: ""}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}
+    </script>
+    <script type="text/javascript">
+    var highestCol = Math.max($('.group-left').height(),$('.group-right').height());
+    $('.equal-height').height(highestCol);
+    </script>
   </body>
   </html>

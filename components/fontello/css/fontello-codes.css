@@ -1,6 +1,8 @@
 
-.social-duckduckgo:before { content: '\e800'; } /* '' */
+.social-music:before { content: '\e868'; } /* '' */
 .social-lkdto:before { content: '\e866'; } /* '' */
+.social-duckduckgo:before { content: '\e800'; } /* '' */
+.social-aim:before { content: '\e801'; } /* '' */
 .social-delicious:before { content: '\e802'; } /* '' */
 .social-paypal:before { content: '\e803'; } /* '' */
 .social-flattr:before { content: '\e804'; } /* '' */
@@ -49,8 +51,8 @@
 .social-twitter:before { content: '\e82f'; } /* '' */
 .social-youtube:before { content: '\e830'; } /* '' */
 .social-vimeo:before { content: '\e831'; } /* '' */
-.social-windows:before { content: '\e832'; } /* '' */
-.social-aim:before { content: '\e801'; } /* '' */
+.social-headphones:before { content: '\e867'; } /* '' */
+.social-xing:before { content: '\e833'; } /* '' */
 .social-yahoo:before { content: '\e834'; } /* '' */
 .social-chrome:before { content: '\e835'; } /* '' */
 .social-email:before { content: '\e836'; } /* '' */
@@ -101,4 +103,4 @@
 .social-login:before { content: '\e863'; } /* '' */
 .social-stackoverflow:before { content: '\e864'; } /* '' */
 .social-hackernews:before { content: '\e865'; } /* '' */
-.social-xing:before { content: '\e833'; } /* '' */
+.social-windows:before { content: '\e832'; } /* '' */
