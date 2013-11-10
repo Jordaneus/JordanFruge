@@ -68,7 +68,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; 
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 
 

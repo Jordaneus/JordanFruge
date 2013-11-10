@@ -77,7 +77,7 @@
 
 
       <!-- Main banner -->
-      <div class="banner">
+      <div id="top" class="banner">
         <div class="container">
           <div class="row">
             <div class="group-left col-md-6">
@@ -108,10 +108,10 @@
 
       <!-- START THE FEATURETTES -->
       <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        <div class="col-md-6">
+          <a href=""></a>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
           <h2 id="streaming" class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
@@ -121,8 +121,10 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 id="shop" class="featurette-heading">Shop. <span class="text-muted">MPWhat? Get my instant classic on disc.</span></h2>
-          <h2 class="featurette-heading">$13.99</h2>
+          <h2 id="shop" class="featurette-heading">Shop. <span class="text-muted">Put my face in your stereo.</span></h2>
+          <p class="lead">
+            Kids these days with their stuff in the clouds. Get my instant classic on disc, shipped to your door. $13.99
+          </p>
           <a class="wepay-widget-button wepay-green" id="wepay_widget_anchor_527c63620b16c" href="https://www.wepay.com/stores/349981/item/698185">Buy Now</a>
           <!-- <a class="btn btn-lg btn-success" id="wepay_widget_anchor_527c63620b16c" href="https://www.wepay.com/stores/349981/item/698185">Buy Now</a> -->
         </div>
@@ -134,12 +136,9 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <div class="col-md-12">
+          <h2 id="shows" class="featurette-heading">Live shows. <span class="text-muted">I'll impress you in-person.</span></h2>
+          <p class="lead">No live shows yet, but we'll keep you posted. I promise.</p>
         </div>
       </div>
 
@@ -147,11 +146,20 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 id="about" class="featurette-heading">Jordan Frugé. <span class="text-muted">Pianist.</span></h2>
+          <p class="lead">I'm a creator, consumer, and lover of music. I really hope you enjoy the sounds I make.</p>
+          <p>
+            Jordan Emanuel Frugé was born January 1, 1985 in Denton, TX, the third of four children of parents Michael and Susan Frugé. He grew up in nearby small town Ponder, TX, and graduated from Ponder High School. He then enrolled in the College of Music at the University of North Texas, originally declaring Pipe Organ performance as his major, with a minor in Religion/Philosophy. He attended UNT for 5 years, until tuition exceeded the cost of his car, short of achieving his degree.
+          </p>
+          <p>
+            Jordan began playing piano at age 11, and writing, over performing, has always been his main passion. He helped score a short film titled “His and Hers” in 2011 and played keyboard a time with short-lived band, Midnight Revival. He plays from time to time for comedy troupe 4-Day Weekend in Ft. Worth, TX.
+          </p>
+          <p>
+            He self-released his first album, “Ice Cold Fever”, in November of 2013, and hopes earnestly that you like it.
+          </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive img-thumbnail" src="img/jordan_profile.png" alt="About Jordan Fruge">
         </div>
       </div>
 
@@ -161,9 +169,9 @@
 
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <footer class="footer">
+        <p class="pull-right"><a href="#top">Back to top</a></p>
+        <p>&copy; 2013 Jordan Frugé. </p>
       </footer>
 
     </div><!-- /.container -->
@@ -177,7 +185,7 @@
     <script src="components/bootstrap/docs-assets/js/holder.js"></script>
     <script type="text/javascript">
     $(function() {
-      $('.navbar a[href*=#]:not([href=#])').click(function() {
+      $('footer a[href*=#]:not([href=#]), .navbar a[href*=#]:not([href=#]), .banner a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
