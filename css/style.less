@@ -2,6 +2,36 @@
 
 @mobile: ~'screen and (max-width: 768px)';
 
+/* WEB FONTS
+-------------------------------------------------- */
+/* @license
+ * MyFonts Webfont Build ID 2685329, 2013-11-10T03:17:05-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Insolent by Haiku Monkey
+ * URL: http://www.myfonts.com/fonts/haiku/insolent/regular/
+ * Copyright: Copyright (c) 2009 by Alec Julien. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2685329
+ * 
+ * © 2013 MyFonts Inc
+*/
+  
+@font-face {
+  font-family: 'Insolent';
+  src: url('../webfonts/28F991_0_0.eot');
+  src: url('../webfonts/28F991_0_0.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/28F991_0_0.woff') format('woff'),
+       url('webfonts/28F991_0_0.ttf') format('truetype');
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -50,13 +80,20 @@ body {
   overflow: auto;
   padding: 20px 0;
   .box-sizing();
+  @media @mobile {
+    background-position: 0 0;
+  }
   .group-left {
     position: relative;
+    @media @mobile {
+      max-height: 200px;
+    }
     .group-inner {
-      font-family: 'Days One', sans-serif;
+      font-family: 'Insolent', sans-serif;
       top: 25%;
       position: absolute;
       text-align: center;
+      text-transform: uppercase;
       width: 100%;
       .top-line, .bottom-line {
         color: white;
@@ -66,10 +103,16 @@ body {
         width: 100%;
       }
       .top-line {
-        .font-size(7);
+        .font-size(6);
+        @media @mobile {
+          .font-size(4);
+        }
       }
       .bottom-line {
-        .font-size(2.6);
+        .font-size(2.4);
+        @media @mobile {
+          .font-size(1.8);
+        }
       }
     }
   }
@@ -79,6 +122,7 @@ body {
         border: none !important;
         display: block;
         overflow: auto;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25)
       }
       .btn-itunes {
         background-color: #8148A3;
@@ -143,6 +187,9 @@ body {
 
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  @media @mobile {
+    margin: 40px 0;
+  }
 }
 
 /* Thin out the marketing headings */
@@ -150,6 +197,22 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+}
+
+.streaming {
+  .btn {
+    @media @mobile {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.shop {
+  .group-left {
+    @media @mobile {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .social-media {
